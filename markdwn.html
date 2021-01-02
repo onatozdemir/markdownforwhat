@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Mark Down For What</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-auto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png" alt="Markdown-mark" width="30" height="24" class="ms-1 me-1 d-inline-block align-center">
+                </div>
+                <div class="col-sm-auto">
+                    <span class="navbar-brand h1">
+                    Markdown Cheat Sheet</span>
+                </div>
+                <div class="col-sm-auto">
+                    This is a useless Navbar
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!--".sticky-top.dropdown"-->
+    <ul class="nav justify-content-center sticky-top bg-light">
+        <li class="nav-item">
+          <a class="nav-link" href="#headings">Başlık</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#paragraphs">Paragraf</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#break-line">Satır Başı</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#emphasis">Vurgu</a>
+        </li>
+      </ul>
+        
+      <br id="headings">
+      <br>
+    <div class="container mt-3 ms-2 me-10 ">
+        <div class="row mt-1 ms-3">
+          <div class="col-sm-4 col-md 2">
+            <h1>Başlık</h1>
+          </div>
+          <div class="col-sm-8 col-md-10">
+            <p>Başlıklar kelimenin önüne numara işareti (#) konarak oluşturulur. İşaret sayısı başlık seviyesini gösterir.
+            </p>
+          </div>
+        </div>
+        <table class="table table-bordered text-center align-middle">
+          <thead class="bg-light">
+           <tr>
+             <th>Markdown</th>
+             <th>HTML</th>
+             <th>Output</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td># Lorem, ipsum.</td>
+              <td><xmp><h1>Lorem, ipsum.</h1></xmp></td>
+              <td><h1>Lorem, ipsum.</h1></td>
+            </tr>
+            <tr>
+              <td>## Lorem, ipsum.</td>
+              <td><xmp><h2>Lorem, ipsum.</h2></xmp></td>
+              <td><h2>Lorem, ipsum.</h2></td>
+            </tr>
+            <tr>
+              <td>### Lorem, ipsum.</td>
+              <td><xmp><h3>Lorem, ipsum.</h3></xmp></td>
+              <td><h3>Lorem, ipsum.</h3></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        
+    </div>
+
+    <div class="container mt-3 ms-2 me-10" >
+        <div class="row mt-1 ms-3">
+          <div class="col-sm-4 col-md 2">
+            <h1>Başlık için Alternatif</h1>
+          </div>
+          <div class="col-sm-8 col-md-10">
+            <p>1. ve 2. seviye başlıklar için sırasıyla "==" ve "--" işaretleri alt satıra tek başına konabilir.
+            </p>
+          </div>
+        </div>
+        <table class="table table-bordered text-center align-middle">
+          <thead class="bg-light">
+           <tr>
+             <th>Markdown</th>
+             <th>HTML</th>
+             <th>Output</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem, ipsum.<br>=====</td>
+              <td><xmp><h1>Lorem, ipsum.</h1></xmp></td>
+              <td><h1>Lorem, ipsum.</h1></td>
+            </tr>
+            <tr>
+              <td>Lorem, ipsum. <br>--------</td>
+              <td><xmp><h2>Lorem, ipsum.</h2></xmp></td>
+              <td><h2>Lorem, ipsum.</h2></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+        
+    </div>
+    
+    <div class="container mt-3 ms-2 me-10" id="paragraphs" >
+        <br><br>
+        <div class="row mt-1 ms-3">
+          <div class="col-sm-4 col-md 2">
+            <h1>Paragraf</h1>
+          </div>
+          <div class="col-sm-8 col-md-10">
+            <p>Paragraflar için boş satır yeterlidir.
+            </p>
+          </div>
+        </div>
+        <table class="table table-bordered text-center align-middle">
+          <thead class="bg-light">
+           <tr>
+             <th>Markdown</th>
+             <th>HTML</th>
+             <th>Output</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem, <br><br>ipsum.</td>
+              <td><xmp><p>Lorem,</p></xmp><br><xmp><p>ipsum.</p></xmp></td>
+              <td>Lorem, <br><br>ipsum.</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+        
+    </div>
+
+    <div class="container mt-3 ms-2 me-10" id="break-line">
+        <br><br>
+        <div class="row mt-1 ms-3">
+          <div class="col-sm-4 col-md 2">
+            <h1>Satır Başı (br)</h1>
+          </div>
+          <div class="col-sm-8 col-md-10">
+            <p>Bir satırı iki veya daha fazla boşlukla bitirip diğer satıra geçmek satır başı yapmaya yeter.
+            </p>
+          </div>
+        </div>
+        <table class="table table-bordered text-center align-middle">
+          <thead class="bg-light">
+           <tr>
+             <th>Markdown</th>
+             <th>HTML</th>
+             <th>Output</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><xmp>Lorem,  </xmp><xmp>ipsum.</xmp></td>
+              <td><xmp>Lorem,<br><xmp>ipsum.</p></xmp></td>
+              <td>Lorem, <br>ipsum.</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+        
+    </div>
+    
+    <div class="container mt-3 ms-2 me-10" id="emphasis">
+        <br><br>
+        <div class="row mt-1 ms-3">
+          <div class="col-sm-4 col-md 2">
+            <h1>Vurgu</h1>
+          </div>
+          <div class="col-sm-8 col-md-10">
+            <p>Bir metini bold veya italik yapmak için '*' işareti kullanılır.
+            </p>
+          </div>
+        </div>
+        <table class="table table-bordered text-center align-middle">
+          <thead class="bg-light">
+           <tr>
+             <th>Markdown</th>
+             <th>HTML</th>
+             <th>Output</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>**Lorem, ipsum.**</td>
+              <td><xmp><strong>Lorem, ipsum.</strong></xmp></td>
+              <td><strong>Lorem, ipsum.</strong></td>
+            </tr>
+            <tr>
+                <td>*Lorem, ipsum.*</td>
+                <td><xmp><em>Lorem, ipsum.</em></xmp></td>
+                <td><em>Lorem, ipsum.</em></td>
+            </tr>
+            <tr>
+                <td>***Lorem, ipsum.***</td>
+                <td><xmp><strong><em>Lorem, ipsum.</em></strong></em></xmp></td>
+                <td><strong><em>Lorem, ipsum.</em></strong></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+        
+    </div>
+
+
+
+    
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
